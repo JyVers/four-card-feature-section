@@ -19,15 +19,6 @@ body{
     background-color: var(--light-gray);
 }
 
-.bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.3;
-    display: none;
-}
-
 /* HEADER */
 
 header{
@@ -89,7 +80,7 @@ header p{
 
     margin-top: 9px;
     margin-bottom: 50px;
-    
+
     color: var(--grayish-blue)
 }
 
