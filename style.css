@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: var(--dark-blue);
+
+    background-color: var(--light-gray);
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    display: none;
+}
+
+/* HEADER */
+
+header{
+    text-align: center;
+    margin: 0 auto;
+
+    width: 40%;
+}
+
+header h4{
+    font-weight: 200;
+    font-size: 2.28rem;
+    margin-top: 78px;
+}
+
+header h5{
+    font-size: 2.28rem;
+    line-height: 2.9rem;
+}
+
+header p{
+    font-size: 1rem;
+    letter-spacing: -0.4px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* CARDS */
+
+.card{
+    width: 350px;
+    height: 250px;
+
+    margin-top: 32px;
+    padding-left: 32px;
+    padding-top: 26px;
+    padding-right: 30px;
+
+    border-radius: 5px;
+    box-shadow: 0px 10px 35px -16px rgba(40,96,168,0.5);
+
+    background-color: #fff;
+
+    position: relative;
+}
+
+.card h6{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.card p{
+    font-size: 0.77rem;
+    line-height: 1.4rem;
+    letter-spacing: .4px;
+
+    margin-top: 9px;
+    margin-bottom: 50px;
+}
+
+.card img{
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+}
+
+
+.card-cyan{ border-top: 5px solid var(--cyan);}
+.card-red{ border-top: 5px solid var(--red);}
+.card-orange{ border-top: 5px solid var(--orange);}
+.card-blue{ border-top: 5px solid var(--blue);}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .center{
+    margin: 30px;
+}
+
+@media screen and (max-width: 1150px) {
+    main{ 
+        flex-direction: column; 
+        margin-top: 50px; 
+        margin-bottom: 50px;
+    }
+
+    header{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header h4{ font-size: 1.4rem;}
+    header h5{ font-size: 1.3rem;}
+    header p{ font-size: 0.9rem;}
+    main .center{ margin: 0; }
+    .card{ width: 80%; margin-left: auto; margin-right: auto;}
+}
